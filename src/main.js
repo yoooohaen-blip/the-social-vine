@@ -864,7 +864,7 @@ function initConsultationForm() {
     submitBtn.style.backgroundColor = 'var(--accent-vine)';
 
     setTimeout(() => {
-      window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+      window.open(`https://wa.me/918446190244?text=${message}`, '_blank');
       submitBtn.textContent = 'Consultation Request Sent ✓';
       setTimeout(() => {
         const modal = document.getElementById('bookingModal');
