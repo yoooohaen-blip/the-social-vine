@@ -868,20 +868,20 @@ function initProjectModals() {
 /* --------------------------------------------------------------------------
    5. Discovery Consultation Booking Modal & Retainer Preselection
    -------------------------------------------------------------------------- */
-function openBookingWithPlan(planName = 'Growth', planPrice = '₹7,999/month') {
+function openBookingWithPlan(planName = 'Growth', planPrice = '₹9,999/month') {
   const bookingModal = document.getElementById('bookingModal');
   if (!bookingModal) return;
 
   const badgeText = document.getElementById('formPlanBadgeText');
   const planPills = document.querySelectorAll('#planPillsContainer .neuv-pill');
 
-  let targetValue = 'Growth — ₹7,999/month';
+  let targetValue = 'Growth — ₹9,999/month';
   const nameLower = planName.toLowerCase();
 
   if (nameLower.includes('starter')) {
     targetValue = 'Starter — ₹4,999/month';
   } else if (nameLower.includes('growth')) {
-    targetValue = 'Growth — ₹7,999/month';
+    targetValue = 'Growth — ₹9,999/month';
   } else if (nameLower.includes('premium')) {
     targetValue = 'Premium — ₹17,999/month';
   } else if (nameLower.includes('shoot') || nameLower.includes('model')) {
@@ -934,7 +934,7 @@ function initBookingModal() {
   if (!bookingModal) return;
 
   function openBooking() {
-    openBookingWithPlan('Growth', '₹7,999/month');
+    openBookingWithPlan('Growth', '₹9,999/month');
   }
 
   function closeBooking() {
@@ -963,7 +963,7 @@ function initPricingInteractions() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const plan = btn.getAttribute('data-plan') || 'Growth';
-      const price = btn.getAttribute('data-price') || '₹7,999/month';
+      const price = btn.getAttribute('data-price') || '₹9,999/month';
       openBookingWithPlan(plan, price);
     });
   });
@@ -1058,7 +1058,7 @@ function initConsultationForm() {
     const phone = document.getElementById('clientPhone').value.trim();
     const details = document.getElementById('brandDetails').value.trim();
 
-    const selectedPlan = form.querySelector('input[name="selectedPlan"]:checked')?.value || 'Growth — ₹7,999/month';
+    const selectedPlan = form.querySelector('input[name="selectedPlan"]:checked')?.value || 'Growth — ₹9,999/month';
 
     const selectedServices = Array.from(form.querySelectorAll('input[name="services"]:checked'))
       .map(cb => cb.value)
