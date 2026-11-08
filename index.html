@@ -173,16 +173,16 @@
                 </a>
               </li>
 
-              <!-- Project 03: Verve Urban Apparel -->
+              <!-- Project 03: Authentic Vision & Shades -->
               <li class="projet-item" data-ancre="T">
-                <a href="#project-verve" class="projet-lien interactive-target" data-cursor="View" data-project="verve">
+                <a href="#project-authentic" class="projet-lien interactive-target" data-cursor="View" data-project="authentic">
                   <span class="projet-cadre">
-                    <img src="/assets/images/portfolio-fashion.jpg" alt="Verve Urban Apparel" loading="lazy" />
+                    <img src="/assets/images/authentic-vision/slide_1.jpg" alt="Authentic Vision &amp; Shades" loading="lazy" />
                   </span>
                   <div class="projet-legende">
-                    <span class="projet-nom">03 — Verve Apparel</span>
+                    <span class="projet-nom">03 — Authentic Vision</span>
                     <span class="projet-fleche" aria-hidden="true">→</span>
-                    <span class="projet-disc">Luxury Fashion · Campaign &amp; Identity</span>
+                    <span class="projet-disc">Luxury Eyewear · Model Campaign &amp; Lookbook</span>
                   </div>
                 </a>
               </li>
@@ -237,7 +237,7 @@
           </div>
           <div class="discipline-preuves">
             <a href="#work" class="discipline-lien interactive-target" data-project="koffie">Koffie Culture →</a>
-            <a href="#work" class="discipline-lien interactive-target" data-project="verve">Verve Apparel →</a>
+            <a href="#work" class="discipline-lien interactive-target" data-project="authentic">Authentic Vision →</a>
           </div>
         </li>
 
@@ -688,8 +688,31 @@
       <p class="meta" id="modalProjectCategory" style="margin-bottom: 0.5rem; color: var(--accent-vine);">Case Study</p>
       <h3 class="titre" id="modalProjectTitle" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Project Title</h3>
 
-      <div style="aspect-ratio: 16/9; background: var(--cadre-vide); border-radius: 6px; overflow: hidden; margin-bottom: 1.75rem;">
-        <img id="modalProjectImage" src="" alt="Project Preview" style="width: 100%; height: 100%; object-fit: cover;" />
+      <!-- Gallery / Lookbook Stage -->
+      <div class="modal-gallery-container" id="modalGalleryContainer">
+        <div class="modal-gallery-stage" id="modalGalleryStage">
+          <img id="modalProjectImage" src="" alt="Project Preview" />
+
+          <!-- Slide Navigation Overlays (visible when project has lookbook slides) -->
+          <div class="modal-gallery-nav" id="modalGalleryNav" style="display: none;">
+            <button type="button" class="modal-gallery-arrow modal-gallery-prev interactive-target" id="modalPrevSlideBtn" aria-label="Previous Frame">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button type="button" class="modal-gallery-arrow modal-gallery-next interactive-target" id="modalNextSlideBtn" aria-label="Next Frame">
+              <span aria-hidden="true">→</span>
+            </button>
+            <div class="modal-gallery-meta-bar">
+              <div class="modal-gallery-caption-group">
+                <span class="modal-gallery-caption" id="modalSlideCaption">See Different. Live Bolder.</span>
+                <span class="modal-gallery-sub" id="modalSlideSub">Gucci Eyewear Collection</span>
+              </div>
+              <span class="modal-gallery-counter" id="modalSlideCounter">01 / 06</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail Filmstrip Strip (visible when project has lookbook slides) -->
+        <div class="modal-thumbnails-strip" id="modalThumbnailsStrip" style="display: none;" role="tablist" aria-label="Lookbook frames"></div>
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; border-top: 1px solid var(--trait); border-bottom: 1px solid var(--trait); padding: 1.25rem 0; margin-bottom: 1.5rem;">
